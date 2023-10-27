@@ -30,7 +30,7 @@
 
         <ListView Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" Background="Beige"/>
 
-        <Label Grid.Column="1" Grid.Row="1" Content="UserName" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10" FontSize="25"/>
+        <Label Name="lblName" Grid.Column="1" Grid.Row="1" Content="UserName" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10" FontSize="25"/>
 
         <Button Name="btnSignOut" Grid.Column="1" Grid.Row="5" Content="Sign Out" FontSize="20" Margin="20"/>
 

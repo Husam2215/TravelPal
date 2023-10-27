@@ -35,7 +35,7 @@
 
         <Button Name="btnRegisterUser" Grid.Column="3" Grid.Row="5" Content="Register User" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Margin="20" Click="btnRegisterUser_Click"/>
 
-        <ComboBox Name="CbCountries" Grid.Column="2" Grid.Row="5" FontSize="20" Margin="20"/>
+        <ComboBox Name="CbCountries" Grid.Column="2" Grid.Row="5" FontSize="20" Margin="20" SelectionChanged="CbCountries_SelectionChanged"/>
         <Label Grid.Column="2" Grid.Row="4" Content="Countries" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20"/>
 
     </Grid>

@@ -1,4 +1,4 @@
-﻿using TravelPal.Enum;
+﻿using TravelPal.Enums;
 
 namespace TravelPal.Manage
 {

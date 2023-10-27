@@ -1,6 +1,8 @@
-﻿using TravelPal.Enum;
+﻿
+using TravelPal.Enums;
 
 namespace TravelPal.Vacation
+
 {
     internal abstract class Travel
     {

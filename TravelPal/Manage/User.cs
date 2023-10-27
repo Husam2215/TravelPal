@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using TravelPal.Enum;
+using TravelPal.Enums;
 using TravelPal.Vacation;
 
 namespace TravelPal.Manage

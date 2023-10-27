@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace TravelPal.Enum
+namespace TravelPal.Enums
 {
     public enum EuropeanCountries
     {

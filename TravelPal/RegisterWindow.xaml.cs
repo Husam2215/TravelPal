@@ -1,5 +1,6 @@
-﻿using System.Windows;
-using TravelPal.Enum;
+﻿using System;
+using System.Windows;
+using TravelPal.Enums;
 using TravelPal.Manage;
 
 namespace TravelPal
@@ -12,6 +13,16 @@ namespace TravelPal
         public RegisterWindow()
         {
             InitializeComponent();
+
+            CbCountries.ItemsSource = Enum.GetValues(typeof(Countries));
+            //foreach (Countries countries in Enum.GetValues(typeof(Countries)))
+            //{
+            //    ListViewItem item = new();
+            //    item.Content = countries.ToString();
+            //    item.Tag = countries;
+            //    CbCountries.Items.Add(item);
+            //}
+
         }
 
         private void btnRegisterUser_Click(object sender, RoutedEventArgs e)
@@ -39,6 +50,11 @@ namespace TravelPal
                     MessageBox.Show("Failed to register user. Username might aready be taken.");
                 }
             }
+        }
+
+        private void CbCountries_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
