@@ -15,13 +15,10 @@ namespace TravelPal
 
         private void SignIn_Click(object sender, RoutedEventArgs e)
         {
-
             string username = txtUserName.Text;
             string password = txtPassword.Text;
 
-
             bool isSignedIn = UserManager.SignInUser(username, password);
-
 
             if (isSignedIn)
             {
@@ -33,6 +30,13 @@ namespace TravelPal
             {
                 MessageBox.Show("The Username or Password is wrong");
             }
+        }
+
+        private void Register_Click(object sender, RoutedEventArgs e)
+        {
+            RegisterWindow registerWindow = new();
+            registerWindow.Show();
+            Close();
         }
     }
 }

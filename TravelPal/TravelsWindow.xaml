@@ -13,6 +13,8 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
 
@@ -22,8 +24,23 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
+
+        <ListView Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" Background="Beige"/>
+
+        <Label Grid.Column="1" Grid.Row="1" Content="UserName" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10" FontSize="25"/>
+
+        <Button Name="btnSignOut" Grid.Column="1" Grid.Row="5" Content="Sign Out" FontSize="20" Margin="20"/>
+
+        <Button Name="btnRemove" Grid.Column="5" Grid.Row="5" Content="Remove" FontSize="20" Margin="20"/>
+
+        <Button Name="btnDetails" Grid.Column="4" Grid.Row="5" Content="Details" FontSize="20" Margin="20"/>
+
+        <Button Name="btnAddTravel" Grid.Column="5" Grid.Row="4" Content="Add Travel" FontSize="20" Margin="20"/>
+
+        <Button Name="btnInfo" Grid.Column="3" Grid.Row="1" Content="How To Use" FontSize="20" Margin="20"/>
 
     </Grid>
 </Window>

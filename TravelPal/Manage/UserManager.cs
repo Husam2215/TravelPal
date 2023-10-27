@@ -7,22 +7,22 @@ namespace TravelPal.Manage
     {
 
 
-        public static List<IUser> users { get; set; } = new()
+        public static List<IUser> Users { get; set; } = new()
         {
 
-            new Admin("Admin", "Passwordd",Countries.Sweden),
+            new Admin("Admin", "Password",Countries.Sweden),
 
             new User("User", "Password", Countries.Sweden)
         };
 
         public static IUser SignedInUser { get; set; }
 
-        public bool addUser(string username, string password, Countries location)
+        public static bool AddUser(string username, string password, Countries location)
         {
             if (ValidateUsername(username))
             {
                 User? user = new(username, password, location);
-                users.Add(user);
+                Users.Add(user);
                 return true;
             }
             else return false;
@@ -37,7 +37,7 @@ namespace TravelPal.Manage
 
         //}
 
-        private bool ValidateUsername(string username)
+        private static bool ValidateUsername(string username)
         {
             bool isValidUsername = false;
 
@@ -46,7 +46,7 @@ namespace TravelPal.Manage
                 isValidUsername = true;
             }
 
-            foreach (var user in users)
+            foreach (var user in Users)
             {
                 if (user.UserName == username)
                 {
@@ -59,7 +59,7 @@ namespace TravelPal.Manage
 
         public static bool SignInUser(string username, string password)
         {
-            foreach (var user in users)
+            foreach (var user in Users)
             {
                 if (user.UserName == username && user.Password == password)
                 {
