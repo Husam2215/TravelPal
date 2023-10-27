@@ -32,7 +32,7 @@
 
         <Label Name="lblName" Grid.Column="1" Grid.Row="1" Content="UserName" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="10" FontSize="25"/>
 
-        <Button Name="btnSignOut" Grid.Column="1" Grid.Row="5" Content="Sign Out" FontSize="20" Margin="20"/>
+        <Button Name="btnSignOut" Grid.Column="1" Grid.Row="5" Content="Sign Out" FontSize="20" Margin="20" Click="btnSignOut_Click"/>
 
         <Button Name="btnRemove" Grid.Column="5" Grid.Row="5" Content="Remove" FontSize="20" Margin="20"/>
 
@@ -40,7 +40,7 @@
 
         <Button Name="btnAddTravel" Grid.Column="5" Grid.Row="4" Content="Add Travel" FontSize="20" Margin="20"/>
 
-        <Button Name="btnInfo" Grid.Column="3" Grid.Row="1" Content="How To Use" FontSize="20" Margin="20"/>
+        <Button Name="btnInfo" Grid.Column="3" Grid.Row="1" Content="How To Use" FontSize="20" Margin="20" Click="btnInfo_Click"/>
 
     </Grid>
 </Window>

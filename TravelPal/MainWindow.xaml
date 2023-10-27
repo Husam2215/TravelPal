@@ -37,6 +37,8 @@
         <Button Name="SignIn" Grid.Column="2" Grid.Row="4" Content="Sign In" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Margin="20" Click="SignIn_Click"/>
         <Button Name="Register" Grid.Column="3" Grid.Row="4" Content="Register" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Margin="20" Click="Register_Click"/>
 
+        <Button Name="btnClose" Grid.Column="3" Grid.Row="1" Content="Close" FontSize="20" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnClose_Click"/>
+
 
     </Grid>
 </Window>

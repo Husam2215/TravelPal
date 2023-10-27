@@ -14,5 +14,19 @@ namespace TravelPal
 
             lblName.Content = UserManager.SignedInUser.UserName;
         }
+
+        private void btnInfo_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("");
+        }
+
+        private void btnSignOut_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new();
+            mainWindow.Show();
+            MessageBox.Show("Thanks for using this webbsite!");
+            Close();
+
+        }
     }
 }
