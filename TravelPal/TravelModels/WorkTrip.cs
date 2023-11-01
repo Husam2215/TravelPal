@@ -1,6 +1,6 @@
 ﻿using TravelPal.Enums;
 
-namespace TravelPal.Vacation
+namespace TravelPal.TravelModels
 {
     internal class WorkTrip : Travel
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using TravelPal.Enums;
-using TravelPal.Vacation;
+using TravelPal.TravelModels;
 
 namespace TravelPal.Manage
 {
@@ -14,7 +14,7 @@ namespace TravelPal.Manage
         public Countries Location { get; set; }
 
         // Add new props 
-        public List<Travel> Travels { get; set; }
+        public List<Travel> Travels { get; set; } = new();
 
         public User(string username, string password, Countries location)
         {

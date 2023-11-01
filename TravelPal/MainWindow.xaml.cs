@@ -16,7 +16,7 @@ namespace TravelPal
         private void SignIn_Click(object sender, RoutedEventArgs e)
         {
             string username = txtUserName.Text;
-            string password = txtPassword.Text;
+            string password = txtPassword.Password;
 
             bool isSignedIn = UserManager.SignInUser(username, password);
 

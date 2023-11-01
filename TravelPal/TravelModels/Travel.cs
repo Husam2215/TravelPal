@@ -1,10 +1,10 @@
 ﻿
 using TravelPal.Enums;
 
-namespace TravelPal.Vacation
+namespace TravelPal.TravelModels
 
 {
-    internal abstract class Travel
+    public abstract class Travel
     {
         public string Destinations { get; set; }
 
@@ -21,7 +21,7 @@ namespace TravelPal.Vacation
 
         }
 
-        internal virtual string GetInfo()
+        public virtual string GetInfo()
         {
             return $"{Travellers} passenger from {Countries} to {Destinations}";
         }
